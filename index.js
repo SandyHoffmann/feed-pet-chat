@@ -1,5 +1,5 @@
 const { Server } = require("socket.io")
-const io = new Server({cors: {origin: "http://localhost:3001"}})
+const io = new Server({cors: {origin: "https://feed-pet-front.herokuapp.com/"}})
 
 let users = []
 
@@ -50,5 +50,5 @@ io.on("connection", (socket) => {
 
 })
 
-io.listen(8080)
+io.listen('https://feed-pet-chat.herokuapp.com/')
 
