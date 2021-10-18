@@ -50,5 +50,5 @@ io.on("connection", (socket) => {
 
 })
 
-io.listen(8080)
+io.listen(process.env.PORT || 8080)
 
