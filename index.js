@@ -50,5 +50,7 @@ io.on("connection", (socket) => {
 
 })
 
-io.listen(process.env.PORT || 8080)
-console.log(process.env.PORT)
+io.listen((process.env.PORT || 8080),function () {
+    console.log(`Our app is running on port ${ process.env.PORT }`);
+})
+
